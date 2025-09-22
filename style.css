@@ -1,0 +1,94 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Soft blue gradient */
+  color: #333;
+}
+
+/* POS Container */
+.pos-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff; /* White card */
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Forms */
+.product-form, .cart-form, .transaction {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-form input, .cart-form input, .transaction input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+/* Buttons */
+.product-form button, .cart-form button, .transaction button, .remove-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.product-form button:hover, .cart-form button:hover, .transaction button:hover, .remove-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Totals */
+.total {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Sales history */
+#sales-history {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#sales-history li {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
