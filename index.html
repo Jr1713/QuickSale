@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickSale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pos-container">
+    <h1>QuickSale</h1>
+
+    <!-- Product Form -->
+    <div class="product-form">
+      <input type="text" id="product-name" placeholder="Product Name">
+      <input type="number" id="product-price" placeholder="Price" min="0" step="0.01">
+      <input type="number" id="product-stock" placeholder="Stock" min="0">
+      <button id="add-product">Add to Inventory</button>
+    </div>
+
+    <!-- Inventory Table -->
+    <h2>Inventory</h2>
+    <table id="inventory">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Inventory items will appear here -->
+      </tbody>
+    </table>
+
+    <!-- Add to Cart Form -->
+    <div class="cart-form">
+      <input type="text" id="cart-product-name" placeholder="Product Name">
+      <input type="number" id="cart-product-quantity" placeholder="Quantity" min="1">
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Cart Table -->
+    <h2>Cart</h2>
+    <table id="cart">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cart items -->
+      </tbody>
+    </table>
+
+    <!-- Transaction Section -->
+    <div class="transaction">
+      <label>Discount ($): <input type="number" id="discount" min="0" value="0"></label>
+      <label>Tax (%): <input type="number" id="tax" min="0" value="0"></label>
+      <label>Amount Paid ($): <input type="number" id="paid" min="0" value="0"></label>
+      <button id="checkout">Checkout</button>
+    </div>
+
+    <div class="total">
+      Subtotal: $<span id="subtotal-amount">0.00</span><br>
+      Total: $<span id="total-amount">0.00</span><br>
+      Change: $<span id="change-amount">0.00</span>
+    </div>
+
+    <!-- Sales History -->
+    <h2>Sales History</h2>
+    <ul id="sales-history"></ul>
+    <button id="clear-history" class="remove-btn">Clear Sales History</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
